@@ -1,6 +1,9 @@
 const kmInput = document.getElementById("km");
 const ageInput = document.getElementById("age");
 const btn = document.getElementById("btn");
+const resetBtn = document.getElementById("reset");
+const errorDiv = document.getElementById("error");
+const ticket = documkent.getElementById("ticket");
 const FinalPrice = document.getElementById("FinalPrice");
 
 btn.addEventListener("click", () => {
