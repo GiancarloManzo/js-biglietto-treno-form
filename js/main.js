@@ -4,13 +4,19 @@ const btn = document.getElementById("btn");
 const resetBtn = document.getElementById("reset");
 const errorDiv = document.getElementById("error");
 const ticket = documkent.getElementById("ticket");
+const outAge = document.getElementById("outAge");
+const outKm = document.getElementById("outKm");
+const outOffer = document.getElementById("outOffer");
+const outCar = document.getElementById("outCar");
+const outCode = document.getElementById("outCode");
 const FinalPrice = document.getElementById("FinalPrice");
 
 btn.addEventListener("click", () => {
   const km = Number(kmInput.value);
   const age = Number(ageInput.value);
-  if (!km || !age) {
-    alert("Inserisci km ed età");
+  if (isNaN(km) || isNaN(age) || km <= 0 || age <= 0) {
+    errorDiv.innerText = "Inserisci km ed età validi.";
+    ticket.classList.add("d-none");
     return;
   }
   const pricePerKm = 0.21;
