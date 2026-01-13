@@ -9,3 +9,11 @@ btn.addEventListener("click", () => {
 
 const pricePerKm = 0.21;
 let price = km * pricePerKm;
+
+if (age < 18) {
+  price = price * 0.8;
+} else if (age > 65) {
+  price = price * 0.6;
+}
+
+console.log("Prezzo finale:", price.toFixed(2), "$");
