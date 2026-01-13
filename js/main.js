@@ -5,7 +5,10 @@ const btn = document.getElementById("btn");
 btn.addEventListener("click", () => {
   const km = Number(kmInput.value);
   const age = Number(ageInput.value);
-
+  if (!km || !age) {
+    alert("Inserisci km ed età");
+    return;
+  }
   const pricePerKm = 0.21;
   let price = km * pricePerKm;
 
