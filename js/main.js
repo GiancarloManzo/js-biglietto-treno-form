@@ -1,6 +1,7 @@
 const kmInput = document.getElementById("km");
 const ageInput = document.getElementById("age");
 const btn = document.getElementById("btn");
+const Finalprice = document.getElementById("FinalPrice");
 
 btn.addEventListener("click", () => {
   const km = Number(kmInput.value);
@@ -18,5 +19,5 @@ btn.addEventListener("click", () => {
     price = price * 0.6;
   }
 
-  console.log("Prezzo finale:", price.toFixed(2), "$");
+  Finalprice.innerText = `Prezzo finale: ${price.toFixed(2)}$`;
 });
