@@ -21,11 +21,14 @@ btn.addEventListener("click", () => {
   }
   const pricePerKm = 0.21;
   let price = km * pricePerKm;
+  let offer = "Biglietto Standard";
 
   if (age < 18) {
     price = price * 0.8;
+    offer = "Sconto Minorenni";
   } else if (age > 65) {
     price = price * 0.6;
+    offer = "Sconto Over 65";
   }
 
   Finalprice.innerText = `Prezzo finale: ${price.toFixed(2)}$`;
