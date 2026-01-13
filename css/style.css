@@ -8,5 +8,9 @@
 }
 
 .ticket-side {
-  background: rgba;
+  background: rgb(105, 89, 255);
+}
+
+.form-control:focus {
+  border-color: rgba(255, 255, 255, 0.6);
 }
