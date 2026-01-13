@@ -30,6 +30,21 @@ btn.addEventListener("click", () => {
     price = price * 0.6;
     offer = "Sconto Over 65";
   }
+  const car = Math.floor(Math.random() * 9) + 1;
+  const code = Math.floor(Math.random() * 90000) + 10000;
+
+  outAge.innerText = `Età: ${age}`;
+  outKm.innerText = `km: ${km}`;
+  outOffer.innerText = offer;
+  outCar.innerText = car;
+  outCode.innerText = code;
 
   Finalprice.innerText = `Prezzo finale: ${price.toFixed(2)}$`;
+});
+
+resetBtn.addEventListener("click", () => {
+  kmInput.value = "";
+  ageInput.value = "";
+  errorDiv.innerText = "";
+  ticket.classList.add("d-none");
 });
