@@ -1,7 +1,7 @@
 const kmInput = document.getElementById("km");
 const ageInput = document.getElementById("age");
 const btn = document.getElementById("btn");
-const Finalprice = document.getElementById("FinalPrice");
+const FinalPrice = document.getElementById("FinalPrice");
 
 btn.addEventListener("click", () => {
   const km = Number(kmInput.value);
